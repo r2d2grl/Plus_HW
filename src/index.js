@@ -114,20 +114,21 @@ function displayForecast(response) {
 function getSeason() {
   const month = new Date().getMonth() + 1;
   if (month >= 3 && month <= 5) {
-    document.body.background =
-      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/098/original/Spring-W-46.jpg";
+    document.body.background = "";
+    // закомментировал фоновые рисунки
+    //      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/098/original/Spring-W-46.jpg";
     return `spring`;
   } else if (month >= 6 && month <= 8) {
-    document.body.background =
-      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/099/original/Summer-W-46.jpg";
+    document.body.background = "";
+    //      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/099/original/Summer-W-46.jpg";
     return `summer`;
   } else if (month >= 9 && month <= 11) {
-    document.body.background =
-      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/100/original/Autumn-W-46.jpg";
+    document.body.background = "";
+    //      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/100/original/Autumn-W-46.jpg";
     return `autumn`;
   } else {
-    document.body.background =
-      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/931/original/Winter-W.jpg";
+    document.body.background = "";
+    //      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/931/original/Winter-W.jpg";
     return `winter`;
   }
 }
